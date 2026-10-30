@@ -2,59 +2,203 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Registro de Grupo - CMIYGL</title>
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+			color: #333333;
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			padding: 20px;
+			line-height: 1.6;
+		}
+
+		.container {
+			max-width: 600px;
+			margin: 20px auto;
+			padding: 30px;
+			background-color: #ffffff;
+			border: 2px solid #2c3e50;
+			border-radius: 12px;
+			box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+			display: flex;
+			flex-direction: column;
+		}
+
+		h2 {
+			font-size: 1.8rem;
+			color: #1b4f72;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+			margin-bottom: 10px;
+		}
+
+		p {
+			margin-bottom: 15px;
+			font-size: 1rem;
+		}
+
+		hr {
+			border: 0;
+			height: 2px;
+			background-color: #2c3e50;
+			width: 100% !important;
+			margin: 20px 0;
+		}
+
+		a {
+			color: #2980b9;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s ease, transform 0.2s ease;
+			display: inline-block;
+		}
+
+		a:hover { 
+			color: #1b4f72;
+			transform: translateX(3px);
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="date"],
+		select,
+		textarea {
+			width: 100%;
+			padding: 10px;
+			border: 2px solid #bdc3c7;
+			border-radius: 6px;
+			font-size: 1rem;
+			background-color: #f9f9f9;
+			transition: border-color 0.3s ease;
+		}
+
+		input:focus, select:focus, textarea:focus {
+			border-color: #2980b9;
+			outline: none;
+			background-color: #fff;
+		}
+
+		input[type="radio"] {
+			margin-right: 5px;
+			margin-left: 10px;
+		}
+
+		input[type="radio"]:first-of-type {
+			margin-left: 0;
+		}
+
+		input[type="submit"] {
+			padding: 12px;
+			background-color: #2980b9;
+			color: white;
+			border: none;
+			border-radius: 6px;
+			font-size: 1rem;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s ease, transform 0.1s ease;
+			margin-top: 10px;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #1b4f72;
+		}
+
+		input[type="submit"]:active {
+			transform: scale(0.98);
+		}
+
+		ul {
+			list-style-type: square;
+			padding-left: 20px;
+		}
+
+		@media (max-width: 650px) {
+			body {
+				padding: 10px;
+			}
+
+			.container {
+				padding: 15px;
+				width: 100%;
+			}
+
+			h2 {
+				font-size: 1.4rem;
+			}
+		}
+	</style>
 </head>
-<body bgcolor="#87CEEB" text="#333333">
+<body>
 
-	<h2>FORMULÁRIO DE INSCRIÇÃO</h2>
-	<p>Preencha os dados abaixo para entrar no grupo Baudelaire.</p>
+	<div class="container">
+		<h2>FORMULÁRIO DE INSCRIÇÃO</h2>
+		<p>Preencha os dados abaixo para entrar no grupo Baudelaire.</p>
 
-	<a href="index.html"><small><p align="left">inicio</small></a>
+		<a href="index.html"><small><p align="left">inicio</small></a>
 
-	<hr align="left" width="400">
+		<hr>
 
-	<form>
-		
-		<p>Nome Completo:<br>
-		<input type="text" name="nome" size="40" required minlength="10" maxlength="40"></p>
+		<form>
+			
+			<p>Nome Completo:<br>
+			<input type="text" name="nome" size="40" required minlength="10" maxlength="40"></p>
 
-		<p>E-mail:<br>
-		<input type="email" name="email" size="40"></p>
+			<p>E-mail:<br>
+			<input type="email" name="email" size="40"></p>
 
-		<p>Número de telefone:<br>
-		<input type="text" name="nome" size="40" required minlength="13" maxlength="15"></p>
+			<p>Número de telefone:<br>
+			<input type="text" name="nome" size="40" required minlength="13" maxlength="15"></p>
 
-		<p>Data de Nascimento:<br>
-		<input type="date" name="nascimento" required></p>
+			<p>Data de Nascimento:<br>
+			<input type="date" name="nascimento" required></p>
 
-		<p>Qual sua era favorita de Tyler, The Creator?<br>
-		<select name="era" required>
-			<option value="wolf">Wolf</option>
-			<option value="flower">Flower Boy</option>
-			<option value="igor">IGOR</option>
-			<option value="cmiygl">Call Me If You Get Lost</option>
-			<option value="chroma">Chromakopia</option>
-		</select></p>
+			<p>Qual sua era favorita de Tyler, The Creator?<br>
+			<select name="era" required>
+				<option value="wolf">Wolf</option>
+				<option value="flower">Flower Boy</option>
+				<option value="igor">IGOR</option>
+				<option value="cmiygl">Call Me If You Get Lost</option>
+				<option value="chroma">Chromakopia</option>
+			</select></p>
 
-		<p>Você iria querer viajar conosco?<br>
-		<input type="radio" name="quer_viajar" value="sim"> Sim
-		<input type="radio" name="quer_viajar" value="nao"> Não</p>
+			<p>Você iria querer viajar conosco?<br>
+			<input type="radio" name="quer_viajar" value="sim"> Sim
+			<input type="radio" name="quer_viajar" value="nao"> Não</p>
 
 
-		<p>Você possui passaporte carimbado?<br>
-		<input type="radio" name="passaporte" value="sim"> Sim
-		<input type="radio" name="passaporte" value="nao"> Não</p>
+			<p>Você possui passaporte carimbado?<br>
+			<input type="radio" name="passaporte" value="sim"> Sim
+			<input type="radio" name="passaporte" value="nao"> Não</p>
 
-		<p>Por que você quer se perder com a gente?<br>
-		<textarea name="motivo" rows="5" cols="40" required></textarea></p>
+			<p>Por que você quer se perder com a gente?<br>
+			<textarea name="motivo" rows="5" cols="40" required></textarea></p>
 
-		<input type="submit" value="Enviar">
+			<input type="submit" value="Enviar">
 
-	</form>
+		</form>
 
-	<br>
-	<hr align="left" width="400">
-	<a href="trabalhoDAW.html">Voltar para a página do inicial</a>
+		<br>
+		<hr>
+		<a href="index.html">Voltar para a página do inicial</a>
+	</div>
 
 </body>
 </html>
