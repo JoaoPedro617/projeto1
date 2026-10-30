@@ -1,62 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Chromakopia (2024)</title>
-	<link rel="icon" type="image/png" href="faviconChroma.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler, The Creator - Biografia</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2503/2503918.png">
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #e2e2e2 0%, #c9d6ff 100%); /* Gradiente suave de fundo */
+            color: #2b2b2b;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            font-size: 2.5rem;
+            color: #1a1a1a;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+            margin-bottom: 10px;
+        }
+
+        h3 {
+            color: #111;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ccc;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .bio-header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .bio-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .bio-img {
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 8px;
+            border: 3px solid #333;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+
+        li {
+            padding: 4px 0;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #222;
+            color: #fff;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+
+        a:hover { 
+            color: #e63946;
+            transform: translateX(3px);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #222;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #e63946;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .bio-header {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .bio-img {
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
-<body bgcolor="#1A2421" text="white"> <a name="topo"></a><h1 align="center"><i>CHROMAKOPIA</i></h1>
+<body>
 
-	<a href="index.html" style="color: #4db34d;"><small><p align="left">inicio</small></a>
+    <a name="topo"></a>
+    
+    <div class="container">
+        <h1>Tyler, The Creator</h1>
+        <hr>
 
-	<hr>
+        <div class="bio-header">
+            <div class="bio-info">
+                <p><b>Nome de nascimento:</b> Tyler Okonma</p>
+                <p><b>Local de nascimento:</b> Los Angeles, Califórnia</p>
+                <p><b>Data de nascimento:</b> 6 de março de 1991</p>
+                <p><b>Anos em atividade:</b> 2007 - Dias atuais</p>
+            </div>
+            <img src="Tyler-The-Creator.jpeg" alt="Tyler, The Creator" class="bio-img">
+        </div>
 
-	<p>Lançado em outubro de 2024, <b>Chromakopia</b> é o oitavo projeto de Tyler, The Creator. O álbum marca um retorno a uma estética mais densa e experimental, focando na figura do personagem <b>St. Chroma</b>. Diferente dos álbuns coloridos anteriores, este disco explora temas de herança, identidade e o peso da fama através de uma sonoridade que mistura rap industrial com coros grandiosos.</p>
+        <p>
+            Tyler, the Creator nasceu como <i>Tyler Gregory Okonma</i> em Los Angeles, Califórnia, em 6 de março de 1991. 
+            Ele cresceu em uma casa predominantemente feminina, criado pela mãe e pela avó. Como não conheceu o pai 
+            (um tema que ele aborda em várias músicas, como "Bastard" e "Answer"), ele passou muito tempo sozinho 
+            ou imerso em seus próprios mundos.
+        </p>
 
-	<p>O disco foi inteiramente escrito, produzido e arranjado por Tyler. A narrativa é guiada pela voz de sua mãe, Bonita Smith, fornecendo conselhos e reflexões sobre a vida adulta. Chromakopia é considerado um dos trabalhos mais maduros do artista, onde ele reflete sobre seu legado e o amadurecimento aos 33 anos de idade.</p>
+        <p>
+            Tyler não era o aluno mais estável do mundo. Ele chegou a frequentar 12 escolas diferentes em apenas sete anos, 
+            entre as regiões de Los Angeles e Sacramento. Isso fez dele um "eterno novato", o que o forçou a desenvolver 
+            uma personalidade forte para se adaptar, mas também o tornou um tanto isolado socialmente.
+        </p>
 
-	<p>Abaixo, alguns pontos fundamentais sobre a obra:
+        <p>
+            Sua carreira musical começou na internet e decolou a partir daí. Seu nome artístico surgiu de seu perfil no MySpace, plataforma que ele usava para interagir com outros artistas e postar suas primeiras músicas no início dos anos 2000. Em 2007, a incursão de Okonma na música pela internet o levou à formação do coletivo musical Odd Future, também conhecido como Odd Future Wolf Gang Kill Them All e OFWGKTA. Além de Okonma, o coletivo contou com membros como Hodgy Beats, Jasper Dolphin, Mike G, Left Brain, Domo Genesis, Matt Martians, Pyramid Vritra, Casey Veggies, Earl Sweatshirt, Syd tha Kid, Taco e Frank Ocean ao longo dos anos, entre outros. A primeira mixtape do Odd Future foi lançada em 2008. Em 2011, o grupo fundou sua própria gravadora, a Odd Future Records.
+        </p>
 
-	<ul>
-	<p><li>Estética: Marcada pelo uniforme militar, máscaras e a ideia de uma "marcha" sonora.</li>
+        <p>
+            Tyler, the Creator lançou diversos projetos solo aclamados pela crítica enquanto ainda fazia parte do Odd Future. Seu primeiro trabalho foi a mixtape Bastard, em 2009. Em seguida, lançou a faixa "Yonkers" em 2010, antes de lançar seu primeiro álbum de estúdio, Goblin, em 2011.
+        </p>
 
-	<p><li>Sonoridade: Uso intenso de percussão, vozes distorcidas e samples de música africana (Zambia).</li>
+        <p>
+            Criou a marca de moda Golf Wang, inspirada na cultura do skate, no hip hop e na cultura sneaker, produzindo skates, tênis e roupas. Em 2012, fundou o festival anual de música Camp Flog Gnaw. Em 2013, lançou seu terceiro álbum, Wolf. O sucessor de Wolf, Cherry Bomb, de 2015, também contou com a participação de grandes artistas.
+        </p>
 
-	<p><li>Destaque: O single "Noid" aborda a paranoia de viver sob o olhar constante do público.</li>
+        <p>
+            Após uma turnê mundial para o álbum Cherry Bomb, Okonma esperou dois anos para lançar Flower Boy em 2017. O álbum representou uma mudança em seu trabalho, para uma obra mais pessoal e que incorporava elementos de jazz.
+        </p>
 
-	<p><li>Narrativa: Foca no crescimento pessoal e nos conselhos maternos sobre dinheiro e relacionamentos.</li>
-	</ul>
+        <p>
+            Em meados de 2019, o artista lançou seu quinto álbum, IGOR. Em 2020, IGOR rendeu a Tyler, the Creator seu primeiro Grammy de Melhor Álbum de Rap.
+        </p>
 
-	<p>Chromakopia consolidou Tyler como um artista que não segue tendências, lançando o álbum em uma segunda-feira e provando que seu impacto cultural é forte o suficiente para parar a indústria fonográfica em qualquer dia da semana</p>
+        <h3>Onde tudo começou: Los Angeles</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27404345275!2d-118.69192047301024!3d34.02016130939095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75dd41da331%3A0x29cc2e7412392870!2sLos%20Angeles%2C%20CA%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
 
-	<hr>
+        <h3>Álbuns (Clique sobre para saber mais)</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Discografia (Clique para ver)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><a href="Goblin.html">Goblin (2011)</a></td></tr>
+                <tr><td><a href="Wolf.html">Wolf (2013)</a></td></tr>
+                <tr><td><a href="FlowerBoy.html">Flower Boy (2017)</a></td></tr>
+                <tr><td><a href="igor.html">IGOR (2019)</a></td></tr>
+                <tr><td><a href="CallMe.html">Call Me If You Get Lost (2021)</a></td></tr>
+                <tr><td><a href="Chromakopia.html">Chromakopia (2024)</a></td></tr>
+            </tbody>
+        </table>
 
-	<br>
-	<b>Curiosidade:</b> O visual de Chromakopia foi fortemente inspirado no conceito de luz e sombra.
-	<br>
+        <h3>Premiações</h3>
+        <ul>
+            <li><b>2020:</b> Ganhou o Melhor Álbum de Rap com o sucesso "<b>IGOR</b>".</li>
+            <li><b>2022:</b> Ganhou o Melhor Álbum de Rap com "<b>CALL ME IF YOU GET LOST</b>".</li>
+            <li><b>2026:</b> Ganhou o Grammy na categoria Melhor Capa de Álbum com "<b>CHROMAKOPIA</b>".</li>
+        </ul>
 
-	<p>Capa St. Chroma:</p>
-	<img src="chromakopia1.jpg" width="200" alt="Capa St. Chroma">
+        <p>Mesmo que a música "See You Again" seja a sua mais famosa dentre todas já lançadas, ela não ganhou nenhum prêmio da indústria.</p>
 
-	<br><br>
+        <h3>Inscreva-se para receber novidades</h3>
+        <form action="#" method="post">
+            <input type="text" placeholder="Seu nome completo" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Acompanhar Novidades</button>
+        </form>
 
-	<p>A Capa mostra Tyler como St. Chroma, usando o uniforme militar característico em preto e branco, com um fundo verde musgo. Ele aparece liderando uma marcha, simbolizando a liderança criativa e o novo exército sonoro que ele comanda.
+        <p style="margin-top: 15px;">
+            Canal oficial: <a href="https://www.youtube.com/@TylerTheCreator" target="_blank">youtube.com/@TylerTheCreator</a>
+        </p>
 
-	<br><br>
+        <p>
+            Quer um grupo que fale sobre músicos e novidades desse mundo? <a href="Pág2.html">Clique Aqui!</a>
+        </p>
 
-	<p><b>Like Him</b><br>
-	É uma das principais músicas do álbum sobre paranoia. Nesta faixa, Tyler explora um tema que evitou por toda a sua carreira: a relação com seu <i>pai</i> ausente. A música conta com a participação de <u>Lola Young</u> e é guiada pela voz da mãe de Tyler, que revela que o pai dele sempre quis estar presente, desconstruindo a imagem de abandono que Tyler carregava. É uma balada introspectiva que mistura piano suave com uma explosão de sentimentos no final, refletindo sobre semelhança física e perdão.</p>
-
-	<br>
-
-	<video width="400" controls autoplay>
-        <source src="Like-Him.mp4" type="video/mp4">
-    </video>
-
-    <br><br>
-
-	<a href="#topo" style="color: #4db34d;">Voltar ao topo</a>
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="#topo">↑ Voltar ao Topo</a>
+        </p>
+    </div>
 
 </body>
 </html>
