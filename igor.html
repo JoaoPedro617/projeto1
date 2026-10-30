@@ -5,8 +5,138 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>IGOR (2019)</title> 
 	<link rel="icon" type="image/png" href="faviconIGOR.png">
+
+	<style>
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			color: #1a1a1a;
+			padding: 20px;
+			line-height: 1.6;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 20px auto;
+			padding: 30px;
+			background-color: #ffffff;
+			border: 3px solid #000000;
+			border-radius: 12px;
+			box-shadow: 8px 8px 0px #000000; 
+			display: flex;
+			flex-direction: column;
+		}
+
+		h1 {
+			font-size: 3rem;
+			color: #000000;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			text-shadow: 2px 2px 0px #ff69b4; 
+			margin-bottom: 10px;
+		}
+
+		p {
+			text-align: justify;
+			margin-bottom: 15px;
+			font-size: 1rem;
+		}
+
+		hr {
+			border: 0;
+			height: 2px;
+			background-color: #000000;
+			margin: 20px 0;
+		}
+
+		ul {
+			list-style-type: square;
+			padding-left: 25px;
+			margin-bottom: 15px;
+		}
+
+		li {
+			padding: 4px 0;
+		}
+
+		a {
+			color: #d81b60;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s ease, transform 0.2s ease;
+			display: inline-block;
+		}
+
+		a:hover {
+			color: #000000;
+			transform: translateY(-2px); 
+		}
+
+		a:active { 
+			color: #ff69b4;
+		}
+
+		img {
+			border: 2px solid #000000;
+			border-radius: 8px;
+			box-shadow: 4px 4px 0px #000000;
+			margin-top: 5px;
+			max-width: 100%;
+			height: auto;
+		}
+
+		video {
+			max-width: 100%;
+			height: auto;
+			border: 2px solid #000000;
+			border-radius: 8px;
+			box-shadow: 4px 4px 0px #000000;
+		}
+
+		input, button {
+			padding: 10px;
+			border: 2px solid #000;
+			border-radius: 4px;
+			font-size: 1rem;
+		}
+
+		@media (max-width: 600px) {
+			body {
+				padding: 10px;
+			}
+
+			.container {
+				padding: 15px;
+			}
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			img {
+				width: 100% !important;
+			}
+
+			video {
+				width: 100% !important;
+			}
+		}
+	</style>
 </head>
-<body bgcolor="#FF69B4"> <a name="topo"></a><h1 align="center"><i>IGOR</i></h1>
+<body>
+
+<a name="topo"></a>
+
+<div class="container">
+	<h1 align="center"><i>IGOR</i></h1>
 
 	<a href="index.html"><small><p align="left">inicio</small></a>
 
@@ -60,11 +190,15 @@
 	<br>
 
 	<video width="400" controls autoplay>
-        <source src="EARFQUAKE.mp4" type="video/mp4">
-    </video>
-
-    <br><br>
-
-    <a href="#topo">Voltar ao topo</a>
+	     <source src="EARFQUAKE.mp4" type="video/mp4">
+	</video>
 
 	<br><br>
+
+	<a href="#topo">Voltar ao topo</a>
+
+	<br><br>
+</div>
+
+</body>
+</html>
